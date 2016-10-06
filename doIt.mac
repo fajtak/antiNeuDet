@@ -1,0 +1,30 @@
+#
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+#
+
+#
+#/gun/particle e+
+#/gun/energy 300 MeV
+/antiNeu/gun/position 3
+/antiNeu/gun/direction 2
+/antiNeu/gun/energy 2
+/antiNeu/gun/particle 3
+#
+#/gun/position -5.0 -15.0 0.0 cm
+#
+/antiNeu/geometry/polyX 40.0 cm
+/antiNeu/geometry/polyY 20.0 cm
+/antiNeu/geometry/polyZ 1.0 cm
+/antiNeu/geometry/tiO2thick 27.6 um
+/antiNeu/geometry/nLayers 40
+/antiNeu/geometry/nLayInOneStack 2
+/antiNeu/geometry/nScintInOneLayer 2
+/antiNeu/geometry/update
+#
+
+#
+#/control/execute visO.mac
+#
+/run/beamOn 10000
